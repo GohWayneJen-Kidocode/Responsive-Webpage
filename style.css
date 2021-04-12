@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li, a, .site_container{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 250;
+    font-size: 10px;
+    color: #f1edf1;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fac8fde7;
+}
+
+header {
+    box-sizing: content-box;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+    background-color: #242524;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    margin-top: 0px;
+    size: auto;
+}
+
+.nav_links li{
+    flex-direction: row;
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+.box{
+    width: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: 5%;
+    margin-top: 5%; 
+    color: white;
+    border-radius: 5%;
+    max-width: 430px;
+}
+.box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.box p{
+    justify-self: center;
+}
+
+button{
+    color:#242524;
+    background-color: #242524;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; 
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .box{
+        width: 60vw;
+        margin: auto;
+        margin-top: 5%;
+
+    }
+
+    li, a, .site_container{
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    button {
+        padding: 9px 25px;
+        background-color: rgba(0,135,169,1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s; 
+        margin-right: 10px;
+    }
+
+    button :hover{
+        background-color: rgba(0,135,169,0.8);
+    }
+}
